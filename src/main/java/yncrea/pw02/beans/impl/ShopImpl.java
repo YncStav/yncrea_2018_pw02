@@ -22,7 +22,6 @@ public class ShopImpl implements Shop {
     public void updateStocks(Order myOrder) {
         for (String product: myOrder.getProducts()) {
             this.stock.put(product, this.stock.get(product)-1);
-            System.out.println(product + " , " + this.stock.get(product));
         }
     }
 }
